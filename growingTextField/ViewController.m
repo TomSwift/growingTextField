@@ -25,5 +25,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction) textFieldDidChange: (UITextField*) textField
+{
+    [UIView animateWithDuration:0.1 animations:^{
+        [textField invalidateIntrinsicContentSize];
+    }];
+}
+
 
 @end
